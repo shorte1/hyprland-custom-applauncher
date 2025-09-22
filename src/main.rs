@@ -33,7 +33,6 @@ fn main() {
 
         // Setting grid for button interface
         let grid = Grid::new();
-        // let label = Label::new(Some("Hello, World!"));
         Grid::set_column_spacing(&grid,10);
         Grid::set_row_spacing(&grid, 30);
         grid.set_halign(Align::Center);
@@ -95,8 +94,14 @@ fn main() {
 
         // Load CSS
         let provider = gtk::CssProvider::new();
+        let exe_dir = std::env::current_exe()
+            .ok()
+            .and_then(|path| path.parent().map(|p| p.to_path_buf()))
+            .expect("Failed to get executable directory");
+        let css_path = exe_dir.join("../../src/style.css");
+        println!("Loading CSS from: {:?}", css_path);
         provider
-            .load_from_path("/home/johns/Projects/launcher/src/style.css");
+            .load_from_path(css_path);
 
         gtk::style_context_add_provider_for_display(
             &gdk::Display::default().expect("Could not connect to a display."),

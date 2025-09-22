@@ -44,15 +44,15 @@ button:active {
 }
 
 #dolphin {
-    background-image: url("./SVG/dolphin.svg");
+    background-image: url("SVG/dolphin.svg");
 }
 
 #duck {
-    background-image: url("./SVG/duck.svg");
+    background-image: url("SVG/duck.svg");
 }
 
 #pcsx2 {
-    background-image: url("./SVG/pcsx2.svg");
+    background-image: url("SVG/pcsx2.svg");
 }
 
 label {
