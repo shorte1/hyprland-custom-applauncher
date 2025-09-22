@@ -1,0 +1,77 @@
+@keyframes win{
+    from {
+        opacity: 0;
+        padding: 0px;
+    }
+    to {
+        opacity: 1;
+        padding: 10px;
+    }
+}
+
+/* window {
+    background-color: rgba(81, 255, 0, 0.945);
+    border-radius: 30%;
+    border: 1px solid rgb(0, 255, 242);
+    animation-name: win;
+    animation-duration: 0.5s;
+    padding: 10px;
+    width: 50px;
+} */
+
+window {
+    position: relative;
+    background: rgb(30, 20, 44);
+    border: 1px solid rgb(30, 20, 44);
+    border-radius: 2rem;
+}
+
+button {
+    all: initial;
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    min-width: 0px;
+    min-height: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.92);
+}
+
+#dolphin {
+    background-image: url("/home/johns/Projects/launcher/src/SVG/dolphin.svg");
+}
+
+#duck {
+    background-image: url("/home/johns/Projects/launcher/src/SVG/duck.svg");
+}
+
+#pcsx2 {
+    background-image: url("/home/johns/Projects/launcher/src/SVG/pcsx2.svg");
+}
+
+label {
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 80px;
+    min-height: 80px;
+    width: 100%;
+    height: 100%;
+    transition: background-size 0.1s ease-in-out;
+}
+
+label:hover {
+    background-size: 90% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 80px;
+    min-height: 80px;
+    width: 100%;
+    height: 100%;
+}
