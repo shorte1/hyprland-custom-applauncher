@@ -1,1 +1,1 @@
-/home/johns/Projects/launcher/target/release/launcher: /home/johns/Projects/launcher/src/main.rs
+/home/johns/Projects/hyprland-custom-applauncher/target/release/launcher: /home/johns/Projects/hyprland-custom-applauncher/src/main.rs
